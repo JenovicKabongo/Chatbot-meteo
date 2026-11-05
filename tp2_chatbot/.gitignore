@@ -1,0 +1,80 @@
+### Système d’exploitation
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+### Éditeurs et IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+### Fichiers d’environnement et secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+### Logs et fichiers temporaires
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.temp
+
+### Archives et fichiers générés
+*.zip
+*.tar
+*.tar.gz
+*.rar
+dist/
+build/
+out/
+coverage/
+
+### Dépendances
+node_modules/
+vendor/
+
+### Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+### .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.rsuser
+
+### Java
+target/
+*.class
+.gradle/
+
+### Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+### Fichiers de dépendances locaux
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
