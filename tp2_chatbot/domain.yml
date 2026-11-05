@@ -1,34 +1,66 @@
 version: "3.1"
-
+ 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
+  - saluer
+  - au_revoir
+  - remercier
+  - demander_aide
+  - meteo_actuelle
+  - prevision_ville
+  - prevision_province
+  - bulletin_rdc
+ 
+entities:
+  - ville
+  - province
+  - jour
+ 
+slots:
+  ville:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: ville
+  province:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: province
+  jour:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: jour
+ 
 responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+  utter_saluer:
+    - text: "Bonjour ! Je suis ton assistant météo. Demande-moi le temps qu'il fait dans une ville ou une province de la RDC."
+    - text: "Salut ! Je peux te donner la météo et les prévisions en RDC. Que veux-tu savoir ?"
+ 
+  utter_au_revoir:
+    - text: "Au revoir ! À bientôt."
+    - text: "À plus ! Prends soin de toi."
+ 
+  utter_remercier:
+    - text: "Avec plaisir !"
+    - text: "De rien, n'hésite pas si tu as une autre question."
+ 
+  utter_aide:
+    - text: "Voici ce que je sais faire :\n• la météo actuelle d'une ville (« Quel temps fait-il à Goma ? »)\n• les prévisions d'une ville pour aujourd'hui, demain ou après-demain (« Va-t-il pleuvoir demain à Bukavu ? »)\n• les prévisions d'une province (« Prévisions pour le Haut-Katanga »)\n• le bulletin des 26 provinces de la RDC (« Bulletin météo RDC »)"
+ 
+  utter_default:
+    - text: "Je n'ai pas bien compris. Je peux donner la météo d'une ville, les prévisions d'une province ou le bulletin des 26 provinces de la RDC. Tape « aide » pour voir des exemples."
+ 
+actions:
+  - action_meteo_actuelle
+  - action_prevision_ville
+  - action_prevision_province
+  - action_bulletin_rdc
+ 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
+ 

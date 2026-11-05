@@ -1,91 +1,314 @@
 version: "3.1"
-
+ 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  # ------------------------------------------------------------------
+  # Conversation de base
+  # ------------------------------------------------------------------
+  - intent: saluer
+    examples: |
+      - Bonjour
+      - Bonsoir
+      - Salut
+      - Coucou
+      - Hello
+      - Hey
+      - Bonjour chef
+      - Salut, ça va ?
+      - Mbote
+      - Bonne journée
+      - Allô
+ 
+  - intent: au_revoir
+    examples: |
+      - Au revoir
+      - À plus
+      - À bientôt
+      - À demain
+      - Bye
+      - Salut, à plus tard
+      - Je m'en vais
+      - Bonne soirée
+      - Bonne nuit
+      - Ce sera tout, au revoir
+      - Tchao
+ 
+  - intent: remercier
+    examples: |
+      - Merci
+      - Merci beaucoup
+      - Merci bien
+      - Je te remercie
+      - Super, merci
+      - Génial, merci !
+      - Parfait, merci
+      - Thanks
+      - Merci pour l'info
+      - C'est gentil, merci
+ 
+  - intent: demander_aide
+    examples: |
+      - Aide
+      - À l'aide
+      - Que sais-tu faire ?
+      - Que peux-tu faire ?
+      - Comment ça marche ?
+      - Comment t'utiliser ?
+      - Peux-tu m'aider ?
+      - Qu'est-ce que tu peux me dire ?
+      - Donne-moi des exemples
+      - Quelles sont tes fonctionnalités ?
+      - Tu sers à quoi ?
+ 
+  # ------------------------------------------------------------------
+  # Météo actuelle d'une ville
+  # ------------------------------------------------------------------
+  - intent: meteo_actuelle
+    examples: |
+      - Quel temps fait-il à [Goma](ville) ?
+      - Quel temps fait-il à [Kinshasa](ville) ?
+      - Quel temps il fait à [Lubumbashi](ville) ?
+      - Météo à [Bukavu](ville)
+      - Météo de [Kisangani](ville)
+      - Donne-moi la météo de [Matadi](ville)
+      - Il fait combien de degrés à [Mbuji-Mayi](ville) ?
+      - Quelle est la température à [Kolwezi](ville) ?
+      - Il fait chaud à [Kalemie](ville) en ce moment ?
+      - Quelle est la météo actuelle à [Bunia](ville) ?
+      - Je veux connaître le temps à [Kananga](ville)
+      - Dis-moi le temps qu'il fait à [Mbandaka](ville)
+      - Météo [Uvira](ville)
+      - Quel est le taux d'humidité à [Butembo](ville) ?
+      - Y a-t-il du vent à [Kindu](ville) ?
+      - Quel temps fait-il ?
+      - Donne-moi la météo actuelle
+      - Il fait quel temps dehors ?
+ 
+  # ------------------------------------------------------------------
+  # Prévision d'une ville
+  # ------------------------------------------------------------------
+  - intent: prevision_ville
+    examples: |
+      - Va-t-il pleuvoir [demain](jour) à [Bukavu](ville) ?
+      - Va-t-il pleuvoir [aujourd'hui](jour) à [Goma](ville) ?
+      - Quel temps fera-t-il [demain](jour) à [Kinshasa](ville) ?
+      - Quelle est la prévision pour [Lubumbashi](ville) [demain](jour) ?
+      - Prévisions météo pour [Kisangani](ville)
+      - Prévision de [Matadi](ville) [après-demain](jour)
+      - Quel temps [après-demain](jour) à [Kananga](ville) ?
+      - Pleuvra-t-il [demain](jour) à [Kolwezi](ville) ?
+      - Donne-moi la météo de [Bunia](ville) pour [demain](jour)
+      - Météo [demain](jour) à [Mbandaka](ville)
+      - Prévisions pour [Kalemie](ville) [aujourd'hui](jour)
+      - Quelle température fera-t-il [après-demain](jour) à [Uvira](ville) ?
+      - Je voudrais la prévision de [Beni](ville) pour [demain](jour)
+      - Est-ce qu'il va pleuvoir à [Mbuji-Mayi](ville) [demain](jour) ?
+      - Prévision pour [Kikwit](ville)
+      - Va-t-il faire chaud [demain](jour) à [Boma](ville) ?
+      - Il pleuvra à [Goma](ville) [après demain](jour) ?
+      - Quelle sera la météo [demain](jour) ?
+ 
+  # ------------------------------------------------------------------
+  # Prévision d'une province
+  # ------------------------------------------------------------------
+  - intent: prevision_province
+    examples: |
+      - Prévisions pour le [Haut-Katanga](province)
+      - Prévisions pour la province du [Lualaba](province)
+      - Quel temps fait-il dans le [Nord-Kivu](province) ?
+      - Météo du [Sud-Kivu](province)
+      - Prévision de la province de l'[Ituri](province)
+      - Quelle est la météo dans le [Kongo Central](province) ?
+      - Prévisions pour le [Bas-Congo](province)
+      - Météo de la province du [Kwilu](province) [demain](jour)
+      - Va-t-il pleuvoir [demain](jour) dans la [Tshopo](province) ?
+      - Prévisions pour le [Tanganyika](province) [après-demain](jour)
+      - Donne-moi la météo du [Haut-Lomami](province)
+      - Quel temps dans le [Kasaï-Central](province) ?
+      - Prévision pour la province de l'[Équateur](province)
+      - Météo [Kin](province)
+      - Province du [Maniema](province), quelles sont les prévisions ?
+      - Prévisions pour le [Mai-Ndombe](province) [aujourd'hui](jour)
+      - Quel temps fera-t-il dans le [Kasaï-Oriental](province) ?
+      - Météo de la province du [Sankuru](province)
+      - Prévisions pour le [Haut-Uele](province)
+      - Et pour le [Kwango](province) ?
+ 
+  # ------------------------------------------------------------------
+  # Bulletin des 26 provinces
+  # ------------------------------------------------------------------
+  - intent: bulletin_rdc
+    examples: |
+      - Donne-moi la météo de toutes les provinces
+      - Météo des 26 provinces
+      - Bulletin météo RDC
+      - Bulletin RDC
+      - Bulletin météo des provinces de la RDC
+      - Je veux la météo de toute la RDC
+      - Quel temps fait-il dans tout le pays ?
+      - Prévisions pour toutes les provinces
+      - Météo nationale
+      - Montre-moi le bulletin météo du pays
+      - Donne le bulletin des 26 provinces
+      - Météo RDC
+ 
+  # ------------------------------------------------------------------
+  # Synonymes
+  # ------------------------------------------------------------------
+  - synonym: Kongo-Central
+    examples: |
+      - Kongo Central
+      - Kongo central
+      - Bas-Congo
+      - Bas Congo
+ 
+  - synonym: Kinshasa
+    examples: |
+      - Kin
+ 
+  - synonym: Mai-Ndombe
+    examples: |
+      - Mai Ndombe
+      - Maindombe
+ 
+  - synonym: Équateur
+    examples: |
+      - Equateur
+ 
+  - synonym: Nord-Kivu
+    examples: |
+      - Nord Kivu
+ 
+  - synonym: Sud-Kivu
+    examples: |
+      - Sud Kivu
+ 
+  - synonym: Haut-Katanga
+    examples: |
+      - Haut Katanga
+ 
+  - synonym: Haut-Lomami
+    examples: |
+      - Haut Lomami
+ 
+  - synonym: Haut-Uele
+    examples: |
+      - Haut Uele
+      - Haut-Uélé
+ 
+  - synonym: Bas-Uele
+    examples: |
+      - Bas Uele
+      - Bas-Uélé
+ 
+  - synonym: Nord-Ubangi
+    examples: |
+      - Nord Ubangi
+ 
+  - synonym: Sud-Ubangi
+    examples: |
+      - Sud Ubangi
+ 
+  - synonym: Kasaï
+    examples: |
+      - Kasai
+ 
+  - synonym: Kasaï-Central
+    examples: |
+      - Kasai Central
+      - Kasaï Central
+      - Kasai-Central
+ 
+  - synonym: Kasaï-Oriental
+    examples: |
+      - Kasai Oriental
+      - Kasaï Oriental
+      - Kasai-Oriental
+ 
+  - synonym: après-demain
+    examples: |
+      - après demain
+      - apres demain
+      - apres-demain
+ 
+  # ------------------------------------------------------------------
+  # Tables de recherche (lookup)
+  # ------------------------------------------------------------------
+  - lookup: ville
+    examples: |
+      - Kinshasa
+      - Lubumbashi
+      - Goma
+      - Bukavu
+      - Kisangani
+      - Mbuji-Mayi
+      - Kananga
+      - Matadi
+      - Kolwezi
+      - Likasi
+      - Kalemie
+      - Bunia
+      - Butembo
+      - Beni
+      - Uvira
+      - Mbandaka
+      - Kikwit
+      - Tshikapa
+      - Kindu
+      - Kamina
+      - Boma
+      - Isiro
+      - Gbadolite
+      - Gemena
+      - Lisala
+      - Buta
+      - Kenge
+      - Bandundu
+      - Inongo
+      - Boende
+      - Kabinda
+      - Lusambo
+      - Kipushi
+      - Moanda
+      - Kongolo
+      - Mwene-Ditu
+      - Kabalo
+      - Baraka
+      - Bumba
+      - Aru
+      - Mahagi
+      - Dungu
+      - Zongo
+      - Libenge
+      - Kasumbalesa
+ 
+  - lookup: province
+    examples: |
+      - Kinshasa
+      - Kongo-Central
+      - Kongo Central
+      - Bas-Congo
+      - Kwango
+      - Kwilu
+      - Mai-Ndombe
+      - Équateur
+      - Mongala
+      - Nord-Ubangi
+      - Sud-Ubangi
+      - Tshuapa
+      - Tshopo
+      - Bas-Uele
+      - Haut-Uele
+      - Ituri
+      - Nord-Kivu
+      - Sud-Kivu
+      - Maniema
+      - Haut-Katanga
+      - Haut-Lomami
+      - Lualaba
+      - Tanganyika
+      - Lomami
+      - Kasaï
+      - Kasaï-Central
+      - Kasaï-Oriental
+      - Sankuru
+ 

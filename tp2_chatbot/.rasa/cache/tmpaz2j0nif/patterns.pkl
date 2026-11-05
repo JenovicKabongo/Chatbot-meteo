@@ -1,0 +1,10 @@
+[
+  {
+    "name": "ville",
+    "pattern": "(\\bKinshasa\\b|\\bLubumbashi\\b|\\bGoma\\b|\\bBukavu\\b|\\bKisangani\\b|\\bMbuji\\-Mayi\\b|\\bKananga\\b|\\bMatadi\\b|\\bKolwezi\\b|\\bLikasi\\b|\\bKalemie\\b|\\bBunia\\b|\\bButembo\\b|\\bBeni\\b|\\bUvira\\b|\\bMbandaka\\b|\\bKikwit\\b|\\bTshikapa\\b|\\bKindu\\b|\\bKamina\\b|\\bBoma\\b|\\bIsiro\\b|\\bGbadolite\\b|\\bGemena\\b|\\bLisala\\b|\\bButa\\b|\\bKenge\\b|\\bBandundu\\b|\\bInongo\\b|\\bBoende\\b|\\bKabinda\\b|\\bLusambo\\b|\\bKipushi\\b|\\bMoanda\\b|\\bKongolo\\b|\\bMwene\\-Ditu\\b|\\bKabalo\\b|\\bBaraka\\b|\\bBumba\\b|\\bAru\\b|\\bMahagi\\b|\\bDungu\\b|\\bZongo\\b|\\bLibenge\\b|\\bKasumbalesa\\b)"
+  },
+  {
+    "name": "province",
+    "pattern": "(\\bKinshasa\\b|\\bKongo\\-Central\\b|\\bKongo\\ Central\\b|\\bBas\\-Congo\\b|\\bKwango\\b|\\bKwilu\\b|\\bMai\\-Ndombe\\b|\\bÉquateur\\b|\\bMongala\\b|\\bNord\\-Ubangi\\b|\\bSud\\-Ubangi\\b|\\bTshuapa\\b|\\bTshopo\\b|\\bBas\\-Uele\\b|\\bHaut\\-Uele\\b|\\bIturi\\b|\\bNord\\-Kivu\\b|\\bSud\\-Kivu\\b|\\bManiema\\b|\\bHaut\\-Katanga\\b|\\bHaut\\-Lomami\\b|\\bLualaba\\b|\\bTanganyika\\b|\\bLomami\\b|\\bKasaï\\b|\\bKasaï\\-Central\\b|\\bKasaï\\-Oriental\\b|\\bSankuru\\b)"
+  }
+]

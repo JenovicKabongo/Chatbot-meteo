@@ -1,13 +1,47 @@
 version: "3.1"
-
+ 
 rules:
-
-- rule: Say goodbye anytime the user says goodbye
-  steps:
-  - intent: goodbye
-  - action: utter_goodbye
-
-- rule: Say 'I am a bot' anytime the user challenges
-  steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - rule: Répondre aux salutations
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+ 
+  - rule: Répondre aux adieux
+    steps:
+      - intent: au_revoir
+      - action: utter_au_revoir
+ 
+  - rule: Répondre aux remerciements
+    steps:
+      - intent: remercier
+      - action: utter_remercier
+ 
+  - rule: Présenter les fonctionnalités
+    steps:
+      - intent: demander_aide
+      - action: utter_aide
+ 
+  - rule: Donner la météo actuelle d'une ville
+    steps:
+      - intent: meteo_actuelle
+      - action: action_meteo_actuelle
+ 
+  - rule: Donner la prévision d'une ville
+    steps:
+      - intent: prevision_ville
+      - action: action_prevision_ville
+ 
+  - rule: Donner la prévision d'une province
+    steps:
+      - intent: prevision_province
+      - action: action_prevision_province
+ 
+  - rule: Donner le bulletin des 26 provinces
+    steps:
+      - intent: bulletin_rdc
+      - action: action_bulletin_rdc
+ 
+  - rule: Message de repli quand le bot ne comprend pas
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default

@@ -1,0 +1,29 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJTU3MS8ltSg+MTMltbY2FgDSOR6g": "utter_aide",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohJTU3MS8ltSg+MTMltZaAWaUlJTCVhAyKBQCCZjpJ": "action_listen",
+    "eJyljkEOgCAMBL/SB/gCvmIMIbCHJloNFC6Ev4tRjsaDt246ne5c20T1iCjWeeVdDNV7sOI2GHrCykkhnc0JsTMsPaqhgM1JQLSOA9qHK6sO8p/opVQXsTKSofmIe2HxWCYaHy4fp+tuLFtbTt0oYdM=": "action_prevision_province",
+    "eJyljlEKgDAMQ6/SA3iCXUVkDJePglbZ6n7G7u5E96co+NfQ5CV9Lh3lNSBZNyovYiifhxU3w9AlJo4Kqd4tIlQPS5VqyGN24hGsY4/ywtpUm/Mf6GFUBbEyoqF+DUtiGTF01BoOHscj154fa26CPyqHHdCVjnI=": "action_listen",
+    "eJy1kEEKwzAMBL+iB+QF/koIxth7ENRKkJVcjP9eh9a3hhRKb1q0Oys01zZR3RSHD9F4FUf1NXgJGY7e4sHFIN27F2j3sHRpjhJykAT1gRPaDWs3G87fQBdHdRAboziaN10PlohlotFw8ricubH8suZD8N+VV+9WZGhkaGvLE8DBqe0=": "utter_remercier",
+    "eJy1kEEKwzAMBL+iB+QF/koIxth7ENRKkJVcTP5eh9b00rSB0psW7c4KjXUfqC6KzYdoPIuj+hi8hAxHT3HjYpDmXQu0eViaNEcJOUiC+sAJ+xfWatadv4FOjmogNkZxNC46bywR00C94eBxOXJ9ebHmTfDflWfvVmRoZOi1V7/sn0jTHf3Bxk0=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqTQnJ7UkMy++KCW5tjYWALWEHmU=": "action_bulletin_rdc",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohqTQnJ7UkMy++KCW5ljijULQQMDAWAD7mPYE=": "action_listen",
+    "eJytzrsNgDAMBNBVPAATZBWEIj5XWAoGJQ5NlN0xAgqoKOh88vnJbakNlTVi8/2ovIijcg5e+hmOrhA4KcS6OSFah8WiOhpyCFAWH6exfqMeJ3+A79/MYWUkR+3GpnUN3foMxXJoGbaotdsBJPRh5Q==": "action_meteo_actuelle",
+    "eJytzj0KgDAMBeCr5ACeoFcRKf68IVCjtKlL8e5G1EEnEbc8knxJXdaKyhyx+LZXnsRROQov7QhHZwicFGKzOSHaDItFddTlEKAsPg79+o66rfwBPn8zh5WRHNULm9ZUdOkjFNOuZVjjpf9Y+nKn2QD9iImC": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGnNLWotjYWAAYLG/o=": "utter_saluer",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhODGnNLWoloAhpSUlqUXxULU4zYgFAOsnNfY=": "action_listen",
+    "eJydjsEJgDAQBFu5AqwgrQQJQfZxEKNcLvmE9O6J+hTB3y47DOv7mKjvghbiorxlR/0KIccVju6SuCiysbVAjOFsVR2VmCpkfEiqKiTc7E/HyxEzsDKKI984JcwTPd4Viu20VdgwxnwA/OhaWg==": "action_meteo_actuelle",
+    "eJydjkEKgDAMBL+SB/iCfqVIKbKHQG2lTb0U/25EvQii9JYlk8natg3UlozV+Uk4RUPtHFz0MwxdIXARRGVrQVaGo0YxVHyoyNuHpIogu4vtdLwUUQMLoxiyK4eAcaDbO0OQDluFLn76H0c9f8YdxOaB9w==": "action_listen",
+    "eJy1kEEKhTAMRK+SA3iCXkWkFJlFoK2fNHVTvLsRdSPIF8Fdhkxehunb0lH7CWYfRuUpO2r74HNIcHSIyEWRzVsLxDycTaqjEmKFLH8gVRXiD+9Lxk0QI7AyiqN+5hgxdHRyExTTRquwxUP+5eizP3eFChJk5K2PYQUyTZ1y": "utter_remercier",
+    "eJy1kFsKhDAMRbeSBbiCbkWkFLkfgbYOaepPce+TYRRhwAfC/OWSk5OQvi0dtZdg9mFUnrKj9i18DgmO1hC5KLKxtUCM4WxRHZUQK2S5kFRViF/Zh46DQ8zAyiiO+pljxNDR5k1QTB9bhTVu+n+G/rbn6KGCBBn57k93/Mw0vAHTg7nS": "action_listen",
+    "eJwtzNEJwCAMBNBVMoATuIqISLmPgMai0R9x96a0f3fc48I+jvbdsVK+lJt42l9Ikis8/aXwUIjZOdDNQJSVMTyFxaUgOmIxoZ4qFO19m7DhnPgAeu0mFQ==": "action_meteo_actuelle",
+    "eJydjUEKwCAQA7+yD/AFfkVESslhQdeiqxfx77W0p55KbwmZJG5MQ+Mo6GHblbNYGrcIsiVYekzkqpDFtoqyGIiyMqol1zlGeEMsi1BLCYp8rTWsYH7bf5X+/PgTBahNsg==": "action_listen",
+    "eJy1jzEKgDAMRa+SA3iCXqWIiPwhUlNpU5fSu9uqgziIi1tC3n+f2Fw6ymvANoyTshdD+RwGGRcYuhbHUSGVTRGhMhBlZURDdmPn0HfEUgk1tEDhmy2hHso3/yP0W8/LH7NP4aZvLo4tcxSX0u8BOXJM": "action_prevision_ville",
+    "eJy1j0EKgDAMBL+SB/iCfkVERPYQqam0qZfi323Vg3iQInhLyO4MadPWUFo81n4YlZ0YSufQyzDD0LVYDgrJ2RjgcwairIxgqF3ZWnQNseSEGpqhcIUWkQ9bHf9R+s3z8sfkor/hC4tD6RziSv6z9UXU7S18mrE=": "action_listen",
+    "eJwtjMENwCAMA1fJAEyQVRBCqMojFQ0VCXwQuxfa/nzy2X5MB+Ou1GM6jIsgjC9ESRch/JBZjWS5Takuh8TYmBTBn6VVB51zpuCAZXmGsC9Z9/Rt5gwPiRcosw==": "action_prevision_ville",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrUvJLMkszUYiuF6Kz80iIdhbLMnJzUWB2FzDyguhIrBZCRmcUgrWCZWuKsQddFgX2xALriU4A=": "action_listen",
+    "eJy1j7sNwCAMBVfxAEzAKhFCKHLhiJgIDA1i90A+DVWadLZ895681KagHhGLdatQYA31Hiy7HTU8i6ckyJ3NCWNnkIWEMGlYtpCjgkLeo1FA3DnRMCIpDfW6tG81s/V33/zWm+ay7W6g2Jo5ARYwbwk=": "utter_au_revoir",
+    "eJy1j0sKgDAMBa+SA/QEvYpIKZJFpKaSpm6Kd7f+EFyoG3cJmTePNGU2UEbByflOKbKFsg+O/YAWjiVQUuTK5oRSGWQlJUwWmj5mMTBRCNgaIK6cWliVlNbodpm/1dxTf/fd3zptPruajSRvnqyK4i78ydQuTgeLhQ==": "action_listen"
+  }
+}

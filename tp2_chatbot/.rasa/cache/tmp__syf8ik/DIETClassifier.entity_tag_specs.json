@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-jour",
+      "2": "I-jour",
+      "3": "L-jour",
+      "4": "U-jour",
+      "5": "B-province",
+      "6": "I-province",
+      "7": "L-province",
+      "8": "U-province",
+      "9": "B-ville",
+      "10": "I-ville",
+      "11": "L-ville",
+      "12": "U-ville",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-jour": 1,
+      "I-jour": 2,
+      "L-jour": 3,
+      "U-jour": 4,
+      "B-province": 5,
+      "I-province": 6,
+      "L-province": 7,
+      "U-province": 8,
+      "B-ville": 9,
+      "I-ville": 10,
+      "L-ville": 11,
+      "U-ville": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

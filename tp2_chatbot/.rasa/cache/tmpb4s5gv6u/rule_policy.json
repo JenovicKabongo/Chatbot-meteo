@@ -1,0 +1,34 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}]": "utter_saluer",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saluer\"}}, {\"prev_action\": {\"action_name\": \"utter_saluer\"}, \"user\": {\"intent\": \"saluer\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "utter_au_revoir",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"au_revoir\"}}, {\"prev_action\": {\"action_name\": \"utter_au_revoir\"}, \"user\": {\"intent\": \"au_revoir\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meteo_actuelle\"}}]": "action_meteo_actuelle",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meteo_actuelle\"}}, {\"prev_action\": {\"action_name\": \"action_meteo_actuelle\"}, \"user\": {\"intent\": \"meteo_actuelle\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_aide\"}}]": "utter_aide",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"demander_aide\"}}, {\"prev_action\": {\"action_name\": \"utter_aide\"}, \"user\": {\"intent\": \"demander_aide\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"remercier\"}}]": "utter_remercier",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"remercier\"}}, {\"prev_action\": {\"action_name\": \"utter_remercier\"}, \"user\": {\"intent\": \"remercier\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"prevision_province\"}}]": "action_prevision_province",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"prevision_province\"}}, {\"prev_action\": {\"action_name\": \"action_prevision_province\"}, \"user\": {\"intent\": \"prevision_province\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "utter_default",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_default\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"prevision_ville\"}}]": "action_prevision_ville",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"prevision_ville\"}}, {\"prev_action\": {\"action_name\": \"action_prevision_ville\"}, \"user\": {\"intent\": \"prevision_ville\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bulletin_rdc\"}}]": "action_bulletin_rdc",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bulletin_rdc\"}}, {\"prev_action\": {\"action_name\": \"action_bulletin_rdc\"}, \"user\": {\"intent\": \"bulletin_rdc\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}, {\"prev_action\": {\"action_name\": \"utter_default\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"nlu_fallback\"}}]",
+      "predicting default action with intent restart"
+    ]
+  }
+}

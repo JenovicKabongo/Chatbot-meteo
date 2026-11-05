@@ -1,30 +1,55 @@
 version: "3.1"
-
+ 
 stories:
-
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: Salutation, météo actuelle, remerciement
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+      - intent: meteo_actuelle
+        entities:
+          - ville: Goma
+      - action: action_meteo_actuelle
+      - intent: remercier
+      - action: utter_remercier
+ 
+  - story: Prévision d'une ville puis au revoir
+    steps:
+      - intent: prevision_ville
+        entities:
+          - ville: Bukavu
+          - jour: demain
+      - action: action_prevision_ville
+      - intent: au_revoir
+      - action: utter_au_revoir
+ 
+  - story: Aide puis prévision d'une province
+    steps:
+      - intent: demander_aide
+      - action: utter_aide
+      - intent: prevision_province
+        entities:
+          - province: Haut-Katanga
+      - action: action_prevision_province
+      - intent: remercier
+      - action: utter_remercier
+ 
+  - story: Bulletin des provinces puis une ville précise
+    steps:
+      - intent: bulletin_rdc
+      - action: action_bulletin_rdc
+      - intent: meteo_actuelle
+        entities:
+          - ville: Kinshasa
+      - action: action_meteo_actuelle
+ 
+  - story: Météo d'une ville puis prévision de la même ville
+    steps:
+      - intent: meteo_actuelle
+        entities:
+          - ville: Lubumbashi
+      - action: action_meteo_actuelle
+      - intent: prevision_ville
+        entities:
+          - jour: demain
+      - action: action_prevision_ville
+ 
